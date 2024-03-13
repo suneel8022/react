@@ -12,8 +12,8 @@ import React from 'react'
 */
 
 
-function Card(props){
-    console.log(props);
+function Card({username=" TSK ", post = "Fresher"}){
+    // console.log(props);
     return (
         <div>
                 <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
@@ -24,7 +24,8 @@ function Card(props){
                     </blockquote>
                     <figcaption className="font-medium">
                     <div className="text-sky-500 dark:text-sky-400">
-                        Captain America
+                        {/* {username || 'suneel'} */}
+                        {post}
                     </div>
                     <div className="text-slate-700 dark:text-slate-500">
                         Steve Rogers, Avengers
